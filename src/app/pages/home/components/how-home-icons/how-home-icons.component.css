@@ -1,0 +1,30 @@
+:host { 
+   display: flex;
+   gap: 48px;
+   width: 75%;
+   padding: 68px 0;
+        }
+
+.icon-figure { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 22px
+                 }
+
+
+.fa-solid { 
+    color: var(--color-orange);
+    font-size: 48px
+        }
+
+.icon-title { 
+    color: var(--color-red);
+    font-size: 32px;
+    text-align: center
+        }
+
+.icon-description { 
+        text-align: center
+    }
+     

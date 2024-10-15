@@ -1,0 +1,24 @@
+main { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      }
+
+.home-title { 
+  padding: 58px;
+  font-size:50px;
+  font-weight: 500;
+  text-transform: uppercase
+    }
+
+    .home-img-container { 
+      width: 100%;
+      height: 75vh;
+      overflow: hidden
+  }
+  
+  .home-img { 
+      object-fit: cover;
+      width: 100%;
+      height: 100%
+   }

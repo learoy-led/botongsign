@@ -1,30 +1,22 @@
 <footer>
     <div class="contact-details">
 <h2  class="footer-nav-title">Contacto</h2>
-<p class="footer-nav-element">Dirección:<br/> Calle Valdeón 24<br/>28947 Fuenlabrada, Madrid</p>
-<p class="footer-nav-element">Teléfonos:<br/>916 158 981<br/>620 411 079</p>
-<p class="footer-nav-element">Email:<br/>contacto&#64;botongsign.com</p>
-
+<p class="footer-nav-element">Dirección:<br/> {{contact.address1}}<br/>{{contact.address2}}</p>
+<p class="footer-nav-element">Teléfonos:<br/>{{contact.phone1}}<br/>{{contact.phone2}}</p>
+<p class="footer-nav-element">Email:<br/>{{contact.email}}</p>   
 </div>
 
 <nav>
     <div>
     <h2 class="footer-nav-title">Soluciones</h2>
-    <ul>
-    <li class="footer-nav-element"><a [routerLink]="['/soluciones']">Diseño corporativo</a></li>
-        <li class="footer-nav-element"><a [routerLink]="['/soluciones']">Digital Signage</a></li>
-        <li class="footer-nav-element"><a [routerLink]="['/soluciones']">Diseño mobiliario</a></li>
-        <li class="footer-nav-element"><a [routerLink]="['/soluciones']">Rotulación</a></li>
-        <li class="footer-nav-element"><a [routerLink]="['/soluciones']">Iluminación</a></li>
-        <li class="footer-nav-element"><a [routerLink]="['/soluciones']">Aluminio</a></li>
+    <ul *ngFor="let solution of solutions">
+    <li class="footer-nav-element"><a [routerLink]="['/soluciones']">{{solution.name }}</a></li>
         </ul>
     </div>
         <div>
         <h2 class="nav-title">Sectores</h2>
-        <ul>
-        <li class="footer-nav-element"><a [routerLink]="['/sectores']">Joyerías</a></li>
-            <li class="footer-nav-element"><a [routerLink]="['/sectores']">Restaurantes</a></li>
-            <li class="footer-nav-element"><a [routerLink]="['/sectores']">Concesionarios</a></li>
+        <ul *ngFor="let sector of sectors">
+        <li class="footer-nav-element"><a [routerLink]="['/sectores']">{{sector.name}}</a></li>
             </ul>
         </div>
         </nav>

@@ -1,25 +1,58 @@
 <main>
-<app-home-carousel style="width: 100%;"></app-home-carousel>
+<app-home-carousel></app-home-carousel>
+<section class="activity-presentation">
+    <div>
+<h2 class="home-subtitle">Materiales para tiendas</h2>
+<p class="home-text">    Proveemos todo tipo de materiales para la construcción de tiendas, boutiques, showroom y cualquier tipo de establecimiento.
+        Si eres distribuidor de rotulación, expositores, cerrajería, iluminación u otros suministros para tiendas, descubre nuestras soluciones.
+</p>
+</div>
+<div>
+    <h2 class="home-subtitle">Diseño integral de tiendas</h2>
+<p class="home-text">    Desde el diseño de tu identidad visual corporativa hasta su puesta en escena en el punto de venta, 
+    desarrollamos e implantamos soluciones 360º para joyerías, restaurantes, concesionarios, etc.    
+</p>
+</div>
+</section>
 
-<h1 class="home-title">Soluciones integrales de diseño comercial</h1>
-<p>Desde el diseño de tu identidad visual corporativa hasta su puesta en escena en el punto de venta, 
-    desarrollamos e implantamos soluciones 360º para espacios comerciales.    
+
+<section class="numbers-section">
+<div  *ngFor="let number of numbers">
+<p class="number-qty">{{number.qty}}</p>
+<p class="number-description">{{number.description}}</p>
+</div>
+</section>
+
+
+<section class="who-section">
+<div class="text-and-button">
+<h2 class="who-subtitle">Con la tecnología más avanzada y el equipo mejor calificado</h2>
+<app-button [buttonStyle]="'white-button'" [buttonText] = "'Quiénes somos'" [buttonLink]="'/nosotros'"></app-button>
+</div>
+<img class="who-img" src="/微信图片_202305261526161.jpg" alt="construccion-de-tiendas">
+</section>
+
+
+<section class="projects">
+    <div class="project-figure">
+        <img class="project-image-home" src="/Imagen1.jpg" alt="">
+<h2 class="home-subtitle">Nombre proyecto 1</h2>
+<p class="home-text">Descripción proyecto 1. </p>
+</div>
+<div class="project-figure">
+    <img class="project-image-home" src="/Imagen2.jpg" alt="">
+    <h2 class="home-subtitle">Nombre proyecto 2</h2>
+<p class="home-text">Descripción proyecto 2.    
 </p>
-<p>Boutiques, Showrooms o cualquier tipo de tienda que imagines.    
+</div>
+<div class="project-figure">
+    <img class="project-image-home" src="/Imagen3.jpg" alt="">
+    <h2 class="home-subtitle">Nombre proyecto 3</h2>
+<p class="home-text">Descripción proyecto 3.    
 </p>
+</div>
+</section>
 
 <app-how-home-icons [section]="'how'"></app-how-home-icons>
-
-
-<figure class="home-img-container"> 
-    <img class="home-img" src="/Imagen2.jpg" alt="construccion-de-tiendas">
-</figure>
-
-<h2 class="home-title">Expertos en todo el proceso de diseño de tiendas</h2>
-<p>Confía en especialistas en todos los puntos del proceso creativo y ejecutivo.</p> 
-<p>Diseñamos, fabricamos e instalamos siempre con las últimas tendencias. </p>
-<p>Funcionalidad, creatividad y tecnología. </p>
-
-<app-how-home-icons [section]="'solutions'"></app-how-home-icons>
 
 </main>

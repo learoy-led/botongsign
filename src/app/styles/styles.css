@@ -46,7 +46,7 @@ main {
       
     li {list-style-type:none}
 
-
+p {text-align:center}
 
           .page-subtitle { 
             padding: 32px;
@@ -63,7 +63,20 @@ main {
                 color: var(--color-orange)
                   }
   
- 
-   
+                  .fa-solid { 
+                    color: var(--color-orange);
+                    font-size: 48px
+                        }
+
+                      .remarked-text { 
+                      font-weight: 500;
+                      font-size: 22px;
+                      text-align: center
+                    }
+                    .narrow-text { 
+                    width: 50%;
+                    text-align: center;
+                    margin: auto;
+                    }
     
     

@@ -12,4 +12,5 @@ export class BannerComponent {
 @Input() bannerTitle: string = ""
 @Input() bannerImage: string = ""
 @Input() bannerAlt: string = ""
+@Input() isHidden: boolean = true
 }

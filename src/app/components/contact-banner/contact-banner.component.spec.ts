@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HowHomeIconsComponent } from './how-home-icons.component';
+import { ContactBannerComponent } from './contact-banner.component';
 
-describe('HowHomeIconsComponent', () => {
-  let component: HowHomeIconsComponent;
-  let fixture: ComponentFixture<HowHomeIconsComponent>;
+describe('ContactBannerComponent', () => {
+  let component: ContactBannerComponent;
+  let fixture: ComponentFixture<ContactBannerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HowHomeIconsComponent]
+      imports: [ContactBannerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HowHomeIconsComponent);
+    fixture = TestBed.createComponent(ContactBannerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

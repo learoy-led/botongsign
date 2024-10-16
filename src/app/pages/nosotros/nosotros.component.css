@@ -7,7 +7,11 @@
    text-align: center;
       }
 
-
+      .progress-section { 
+        padding: 52px;
+        margin-bottom: 42px
+          }
+    
 
       .number-qty { 
       font-size:38px;
@@ -18,3 +22,15 @@
     color: var(--color-red);
     font-size: 32px;
   }
+
+  .progress-moments { 
+   display: flex;
+   padding: 12px 52px;
+   gap: 100px;
+   align-items: center;
+   justify-content: center
+  }
+
+  .moment { 
+    width: 20%
+   }

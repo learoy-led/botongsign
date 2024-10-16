@@ -13,11 +13,7 @@
                   }
  
  
- .fa-solid { 
-     color: var(--color-orange);
-     font-size: 48px
-         }
- 
+
  .icon-title { 
      color: var(--color-red);
      font-size: 32px;

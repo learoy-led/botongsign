@@ -26,16 +26,13 @@
 [bannerTitle] = "'Con la tecnología más avanzada y el equipo mejor calificado'"
 [bannerImage]= "'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729012106/fabrica-materiales-para-construccion-tiendas-botongsign_vgwpop.jpg'"
 [bannerAlt]= "'fabrica-materiales-construccion-de-tiendas'" 
+[isHidden]="false"
 ></app-banner>
 
-<section class="solutions-section">
-    <div class="solution-figure" *ngFor="let solution of solutions">
-        <img class="solution-image-home" [src]="solution.image" [alt]="solution.name">
-<h2 class="element-title">{{solution.name}}</h2>
-<p class="home-text">{{solution.description}} </p>
-</div>
-</section>
+
+<app-card [cardElements]="solutions"></app-card>
 
 <app-customers></app-customers>
+
 
 </main>

@@ -8,7 +8,6 @@ export interface ContactDetails {
 
 export interface Solution { 
     name: string,
-    icon: string,
     description: string,
     services: string[],
     image: string
@@ -33,6 +32,12 @@ export interface NumberData {
 export interface Customer { 
     name: string,
     logo: string
+}
+
+export interface IdentitySigns { 
+    name: string,
+    description: string,
+    image: string
 }
 
 

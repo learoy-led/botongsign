@@ -1,1 +1,45 @@
-<p>nosotros works!</p>
+<main>
+<app-banner 
+[bannerTitle] = "'Más de 20 años al servicio de los clientes más exigentes'"
+[bannerImage]= "'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729081000/botingsign-plant_l7s7vk.webp'"
+[bannerAlt]= "'fabrica-botongsign-diseño-comercial'" 
+></app-banner>
+
+<section class="history">
+<h2 class="page-subtitle">Nuestra historia</h2>
+<p>Botong Sign se fundó en 2002 en Shenzhen (China) ofreciendo soluciones de señalización corporativa.
+Tras 22 años de arduo trabajo y desarrollo, la empresa no ha dejado de crecer, con un valor de producción anual que supera los cientos de millones de yuanes.</p>
+<p>Creemos en la tecnología y las personas. Contamos con un parque industrial de más de 40.000 m, la maquinaria de producción más avanzada y un equipo altamente calificado formado por 300 profesionales.
+Además, colaboramos con diseñadores de todo el mundo.</p>
+<p>Actualmente distribuimos materiales para la construcción de tiendas y atendemos proyectos de señalización y diseño comercial a pequeña y gran escala. Desde la planificación, el diseño y la producción hasta la instalación.</p>
+</section>
+
+<section class="numbers-section">
+    <div  *ngFor="let number of numbers">
+    <p class="number-qty">{{number.qty}}</p>
+    <p class="number-description">{{number.description}}</p>
+    </div>
+    </section>
+
+
+
+<section class="values-section">
+    <h2 class="page-subtitle">Nuestra identidad</h2>
+    <div>
+    <h3 class="element-title">Misión</h3>
+    <p>Nuestra misión es dotar a las marcas de personalidad y hacerla visible.</p>
+</div>
+
+<div>
+    <h3 class="element-title">Visión</h3>
+    <p>Nuestra visión es escalar la identidad y notoriedad de pequeñas y grandes marcas.</p>
+</div>
+
+<div>
+    <h3 class="element-title">Valores</h3>
+    <p>Nuestros valores son la creatividad, la innovación y la excelencia.</p>
+</div>
+    </section>
+
+   <app-how-home-icons [section]="'how'"></app-how-home-icons>
+</main>

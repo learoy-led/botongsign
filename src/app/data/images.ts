@@ -7,3 +7,4 @@ export const images: Image[] = [
     {  page: 'home', url:'', alt:''}
 
 ]
+

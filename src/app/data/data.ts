@@ -1,4 +1,4 @@
-import { ContactDetails, Solution, Sector, NumberData } from "../models/data.models"
+import { ContactDetails, Solution, Sector, NumberData, Customer } from "../models/data.models"
 
 export const contactDetails: ContactDetails = { 
     address1: 'Calle Valdeón 24',
@@ -61,6 +61,20 @@ export const numbers: NumberData[] = [
 {  qty: '300', description: 'trabajadores'}
 ]
 
-
-
-
+export const customers: Customer[] = [
+    {  name: 'pekin-university', logo: 'logos/img46.jpg'},
+    {  name: 'pumc-hospital', logo: 'logos/img47.jpg'},
+    {  name: 'peninsula-hotel', logo: 'logos/img55.jpg'},
+    {  name: 'toyota', logo: 'logos/img63.jpg'},
+    {  name: 'volkswagen', logo: 'logos/img64.jpg'},
+    {  name: 'bmw', logo: 'logos/img65.jpg'},
+    {  name: 'cadillac', logo: 'logos/img66.jpg'},  
+    {  name: 'nayuki', logo: '/logos/img67.jpg'},
+    {  name: 'heytea', logo: 'logos/img68.jpg'},
+    {  name: 'chj-jewellery', logo: 'logos/img69.jpg'},
+    {  name: 'chow tai fook', logo: 'logos/frame_49.webp'},
+    {  name: 'tesla', logo: 'logos/frame_50.webp'},
+    {  name: 'dior', logo: 'logos/frame_51.webp'},
+    {  name: 'huawei', logo: 'logos/frame_52.webp'},
+    {  name: 'apple', logo: 'logos/frame_53.webp'},
+]

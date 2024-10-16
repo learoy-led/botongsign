@@ -30,5 +30,10 @@ export interface NumberData {
     description: string
 }
 
+export interface Customer { 
+    name: string,
+    logo: string
+}
+
 
 

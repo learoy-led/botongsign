@@ -1,0 +1,20 @@
+.numbers-section, .values-section { 
+    padding: 48px;
+    width: 80%;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 42px;
+   text-align: center;
+      }
+
+
+
+      .number-qty { 
+      font-size:38px;
+      font-weight: 500;
+      color: var(--color-orange)
+    }
+    .number-description { 
+    color: var(--color-red);
+    font-size: 32px;
+  }

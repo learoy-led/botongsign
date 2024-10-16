@@ -1,0 +1,5 @@
+    <div class="card-figure" *ngFor="let element of cardElements">
+        <img class="card-image" [src]="element.image" [alt]="element.name">
+<h2 class="element-title">{{element.name}}</h2>
+<p>{{element.description}} </p>
+</div>

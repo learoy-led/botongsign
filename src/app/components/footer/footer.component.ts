@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { contactDetails, solutions, sectors } from '../../data/data'
-import { ContactDetails, Solution, Sector } from '../../models/models';
+import { ContactDetails, Solution, Sector } from '../../models/data.models';
 import { CommonModule } from '@angular/common';
 
 @Component({

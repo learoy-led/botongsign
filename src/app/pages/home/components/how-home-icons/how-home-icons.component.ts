@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { solutions } from '../../../../data/data';
-import { IconElement } from '../../../../models/models';
+import { IconElement } from '../../../../models/data.models';
 
 @Component({
   selector: 'app-how-home-icons',

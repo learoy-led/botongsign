@@ -10,7 +10,8 @@ export interface Solution {
     name: string,
     icon: string,
     description: string,
-    services: string[]
+    services: string[],
+    image: string
 }
 
 export interface Sector { 

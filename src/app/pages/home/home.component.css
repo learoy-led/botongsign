@@ -4,11 +4,18 @@ main {
   align-items: center;
       }
 
-      .activity-presentation, .projects
-      { 
+      .activity-presentation { 
         display: flex;
         width: 80%;
         gap: 42px;
+        padding: 48px
+          }
+
+  .solutions-section { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        gap: 32px;
         padding: 48px
           }
 
@@ -32,25 +39,24 @@ main {
             font-size: 32px;
           }
 
-    .home-subtitle { 
-      padding: 32px;
-      font-size:38px;
-      font-weight: 500;
+    .solution-title { 
+      padding: 12px;
+      font-size:30px;
       text-align: center;
-      color: var(--color-red)
+      color: var(--color-orange)
         }
 
         .home-text { 
          text-align: center
             }
 
-   .project-image-home { 
+   .solution-image-home { 
     object-fit: cover;
-    height: 400px
+    height: 300px;
+    width: 100%
  }
 
- .project-figure { 
-  width: 30%;
+ .solution-figure { 
   overflow: hidden
 }
 

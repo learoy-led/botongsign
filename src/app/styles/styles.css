@@ -36,6 +36,10 @@ main {
   align-items: center;
       }
 
+section {
+  padding: 52px 0
+}
+
     a {
       text-decoration: none
     }
@@ -47,6 +51,8 @@ main {
     li {list-style-type:none}
 
 p {text-align:center}
+
+
 
 .page-title { 
   padding: 58px;
@@ -78,11 +84,12 @@ p {text-align:center}
                     font-size: 48px
                         }
 
-                      .remarked-text { 
-                      font-weight: 500;
-                      font-size: 22px;
-                      text-align: center
-                    }
+                        .remarked-text { 
+                          color: var(--color-red);
+                          font-size: 32px;
+                          text-align: center
+                        }
+                        
                     .narrow-text { 
                     width: 50%;
                     text-align: center;

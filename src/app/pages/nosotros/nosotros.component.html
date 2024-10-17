@@ -1,30 +1,34 @@
 <main>
 <app-banner 
 [bannerTitle] = "'Más de 20 años al servicio de los clientes más exigentes'"
-[bannerImage]= "'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729081000/botingsign-plant_l7s7vk.webp'"
+[bannerImage]= "'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729174363/rotulacion-tiendas-botong-sign_pqozf2.webp'"
 [bannerAlt]= "'fabrica-botongsign-diseño-comercial'" 
 ></app-banner>
 
-<section class="history">
+<section class="history-section">
 <h2 class="page-subtitle">Nuestra historia</h2>
-<p>Botong Sign se fundó en 2002 en Shenzhen (China) ofreciendo soluciones de señalización corporativa.
+<div class="history-all-paragraphs">
+<p class="main-history-paragraph">Botong Sign se fundó en 2002 en Shenzhen (China) ofreciendo soluciones de señalización corporativa.
 Tras 22 años de arduo trabajo y desarrollo, la empresa no ha dejado de crecer, con un valor de producción anual que supera los cientos de millones de yuanes.</p>
-<p>Creemos en la tecnología y las personas. Contamos con un parque industrial de más de 40.000 m, la maquinaria de producción más avanzada y un equipo altamente calificado formado por 300 profesionales.
+<div class="history-small-paragraphs">
+<p class="secondary-history-paragraph">Creemos en la tecnología y las personas. Contamos con un parque industrial de más de 40.000 m, la maquinaria de producción más avanzada y un equipo altamente calificado formado por 300 profesionales.
 Además, colaboramos con diseñadores de todo el mundo.</p>
-<p>Actualmente distribuimos materiales para la construcción de tiendas y atendemos proyectos de señalización y diseño comercial a pequeña y gran escala. Desde la planificación, el diseño y la producción hasta la instalación.</p>
+<p class="secondary-history-paragraph">Actualmente distribuimos materiales para la construcción de tiendas y atendemos proyectos de señalización y diseño comercial a pequeña y gran escala. Desde la planificación, el diseño y la producción hasta la instalación.</p>
+</div>
+</div>
 </section>
 
 <section class="numbers-section">
-    <div  *ngFor="let number of numbers">
-    <p class="number-qty">{{number.qty}}</p>
-    <p class="number-description">{{number.description}}</p>
-    </div>
+    <app-numbers></app-numbers>
     </section>
 
-
+    <section class="identity-section">
+        <h2 class="page-subtitle">Identidad Botong Sign</h2>
     <app-card [cardElements]="identitySigns"></app-card>
+</section>
 
-    <app-icons></app-icons>
+
+   
 
     <section class="progress-section">
         <h2 class="page-subtitle">Nuestra evolución</h2>
@@ -48,5 +52,10 @@ Además, colaboramos con diseñadores de todo el mundo.</p>
     <p class="narrow-text">Seguiremos sirviendo a nuestros clientes con entusiasmo y esmero, esforzándonos por convertirnos en un proveedor de referencia en el diseño y construcción de espacios comerciales.</p>
         </section>
 
+        <section class="why-section">
+            <h2 class="page-subtitle">¿Por qué Botong Sign?
+            </h2>
+        <app-icons></app-icons>
+    </section>
 
 </main>

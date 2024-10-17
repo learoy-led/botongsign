@@ -1,0 +1,12 @@
+:host { 
+  display: flex;
+justify-content: space-evenly;
+gap: 42px;
+text-align: center;
+}
+
+.number-qty { 
+    font-size:38px;
+    font-weight: 500;
+    color: var(--color-orange)
+  }

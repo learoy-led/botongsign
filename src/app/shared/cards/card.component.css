@@ -3,7 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
     gap: 32px;
-    padding: 32px
+    padding: 32px;
+    margin: 0 auto
       }
 
       .card-image { 

@@ -1,29 +1,68 @@
-.numbers-section, .values-section { 
-    padding: 48px;
-    width: 80%;
-   display: flex;
-   justify-content: space-evenly;
-   gap: 42px;
-   text-align: center;
-      }
+.history-section { 
+  width: 80%;
+ display: flex;
+ gap: 52px;
+}
 
-      .progress-section { 
-        padding: 52px;
-        margin-bottom: 42px
-          }
-    
+.history-section > h2 { 
+  text-align: left
+}
 
-      .number-qty { 
+.history-all-paragraphs { 
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+ }
+
+ .history-small-paragraphs { 
+  display: flex;
+  gap: 42px;
+ }
+
+ .main-history-paragraph { 
+  font-weight: 500;
+  text-align: left
+ }
+
+ .secondary-history-paragraph { 
+  text-align: left
+ }
+
+ .numbers-section { 
+  min-width: 60vw;
+  position: relative;
+    }
+
+    .numbers-section::after {
+      content: '';
+      display: block;
+      width: 40%;
+      height: 1px;
+      background-color: var(--color-purple);
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+    }
+
+    .number-qty { 
       font-size:38px;
       font-weight: 500;
       color: var(--color-orange)
     }
-    .number-description { 
-    color: var(--color-red);
-    font-size: 32px;
-  }
 
-  .progress-moments { 
+.progress-section { 
+        background-color: var(--color-orange);
+          }
+
+          .progress-section > .page-subtitle, .progress-section > .remarked-text { 
+            color: var(--color-white);
+              }
+
+              .moment > .number-qty,  .progress-moments > .fa-solid { 
+                color: var(--color-red);
+                  }
+  
+.progress-moments { 
    display: flex;
    padding: 12px 52px;
    gap: 100px;

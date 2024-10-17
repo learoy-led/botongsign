@@ -44,7 +44,17 @@
         z-index: -1
  
   }
-  
 
+  @media screen and (max-width: 374px) {
+ .banner-text {
+    padding: 22px;
+      font-size:28px;
+      font-weight: 400;
+    }
+    .banner-text-and-button {
+    left: 0%;
+    transform: translate(-0%, -50%);
+    }
+  }
     
    

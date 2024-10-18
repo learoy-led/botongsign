@@ -1,0 +1,52 @@
+:host { 
+  padding: 52px;
+    }
+
+.paragraph-figure {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+    }
+
+    
+    .paragraph-figure:nth-child(odd) {
+      flex-direction: row; 
+    }
+    
+    .paragraph-figure:nth-child(even) {
+      flex-direction: row-reverse; 
+    }
+
+
+    .paragraph-figure:nth-child(odd) > .paragraph-text > .paragraph-title,
+    .paragraph-figure:nth-child(odd) > .paragraph-text > p {
+      margin-left: 52px; 
+    }
+
+    .paragraph-figure:nth-child(even) > .paragraph-text > .paragraph-title,
+    .paragraph-figure:nth-child(even) > .paragraph-text > p {
+      margin-right: 52px; 
+      }
+
+
+
+    .paragraph-text > p {
+      text-align: left;
+    }
+
+        .paragraph-title {
+         color: var(--color-red);
+         font-size:38px;
+         font-weight: 500px;
+         padding: 32px 0;
+            }   
+
+.paragraph-image {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+      }
+      .paragraph-text {
+        width: 50%;
+          }

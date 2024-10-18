@@ -22,6 +22,10 @@ Además, colaboramos con diseñadores de todo el mundo.</p>
     <app-numbers></app-numbers>
     </section>
 
+    <section class="honors-section">
+    <app-honors></app-honors>
+</section>
+
     <section class="identity-section">
         <h2 class="page-subtitle">Identidad Botong Sign</h2>
     <app-card [cardElements]="identitySigns"></app-card>
@@ -55,7 +59,7 @@ Además, colaboramos con diseñadores de todo el mundo.</p>
         <section class="why-section">
             <h2 class="page-subtitle">¿Por qué Botong Sign?
             </h2>
-        <app-icons></app-icons>
+        <app-icons [isHidden]="false" [iconElements]="howElements"></app-icons>
     </section>
 
 </main>

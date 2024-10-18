@@ -4,6 +4,10 @@
  gap: 52px;
 }
 
+.history-section, .why-section { 
+  width: 80%;
+}
+
 .history-section > h2 { 
   text-align: left
 }

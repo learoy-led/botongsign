@@ -1,4 +1,4 @@
-import { ContactDetails, Solution, Sector, NumberData, Customer, IdentitySigns, IconElement } from "../models/data.models"
+import { ContactDetails, Solution, Sector, NumberData, Customer, IdentitySigns, IconElement, Honor } from "../models/data.models"
 
 export const contactDetails: ContactDetails = { 
     address1: 'Calle Valdeón 24',
@@ -13,39 +13,45 @@ export const solutions: Solution[] = [
         description: 'Desde la distribución de materiales para todo tipo de rótulos hasta su diseño, producción e instalación.',
     services:  ['letras corpóreas', 'materiales para rótulos como metacrilato, PVC, etc.' ],
     image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729175406/rotulacion-profeisonal-botong-sign_qjtkki.webp',
+    icon: 'fa-solid fa-rupee-sign'
 },
 {  name: 'Digital Signage', 
     description: 'Fabricamos, distribuimos e instalamos todo tipo de pantallas publicitarias, tanto de LED como LCD.',
     services: ['pantallas LED/LCD', 'cajas de luz', 'pantallas para escaparates', 'pantallas para interior de tiendas', 'pantallas para fachadas' ],
     image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729175793/digital-signage-botong-sign_tk4rzi.webp',
+    icon: 'fa-solid fa-tachograph-digital'
 },
     { name: 'Diseño corporativo', 
         description: 'Diseñamos y desarrollamos identidades visuales corporativas únicas y sólidas.',
    services: ['desarrollo de indentidad visual corporativa', 'manuales de identidad visual corporativa' ],
-   image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729176232/dise%C3%B1o-corporativo-botong-sign_onbmju.webp',
+   image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729241560/dise%C3%B1o-identidad-visual-corporativa-botong-sign_xhqdyd.webp',
+   icon: 'fa-solid fa-palette'
 },
-{  name: 'Diseño mobiliario', 
+{  name: 'Mobiliario', 
     description: 'Creamos y distribuimos mostradores, expositores, taburetes, paneles y otros elementos decorativos.',
     services: ['mesas, sillas, etc.', 'expositores empotrados', 'adornoso o elementos decorativos', 'alfombras con figuras personalizadas' ],
     image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729175406/mobiliario-tiendas-botong-sign_rhikva.webp',
+    icon: 'fa-solid fa-couch'
 },
 {  name: 'Iluminación', 
     description: 'Productos de alta gama, iluminación personalizada con transformador lifud, etc.',
     services: ['luminarias de alta gama', 'letras luminosas', 'iluminación personalizada de alta calidad con transformador lifud', 'cajas de luz' ],
     image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729175406/iluminacion-comercial-botong-sign_mcfeut.webp',
+    icon: 'fa-solid fa-lightbulb'
 },
     { name: 'Aluminio',
         description: 'Distribuimos perfiles de aluminio, planchas para fachadas, paneles decorativos, etc.',
         services: ['perfiles de aluminio', 'paneles decorativos de lauminio', 'planchas de aluminio para fachadas', 'Productos de acero inoxidable', 
             'cerraduras electrónicas' ],
             image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729175406/aluminio-calado-para-tiendas-botong-sign_dy9vic.webp',
+            icon: 'fa-solid fa-cubes'
 }
 ]
 
 export const sectors: Sector[] = [
-    {  name: 'joyerías', images: []    },
-    {  name: 'restaurantes', images: []    },
-    {  name: 'concesionarios', images: []    }
+    {  name: 'joyerías', image: '', description:'', icon: '' },
+    {  name: 'restaurantes', image: '', description: '', icon: '' },
+    {  name: 'concesionarios', image: '', description: '', icon: '' }
 
 ]
 
@@ -77,15 +83,15 @@ export const identitySigns: IdentitySigns[] = [
 
     {  name: 'Misión', 
         description: 'Nuestra misión es dotar a las marcas de personalidad y hacerla visible.',
-    image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/a_90/v1729070693/%E4%BE%A7%E5%86%B2%E5%AD%94%E9%9D%A2%E5%8C%85%E8%BE%B9%E5%87%BA%E5%85%89%E5%AD%97_m02twx.jpg',
+    image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729241560/dise%C3%B1o-logo-rotulacion-botong-sign_vc2qt6.webp',
 },
 {  name: 'Visión', 
     description: 'Nuestra visión es escalar la identidad y notoriedad de pequeñas y grandes marcas.',
-image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/a_90/v1729070693/%E4%BE%A7%E5%86%B2%E5%AD%94%E9%9D%A2%E5%8C%85%E8%BE%B9%E5%87%BA%E5%85%89%E5%AD%97_m02twx.jpg',
+image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729241545/mision-botong-sign-dise%C3%B1o-marcas_i5pwpo.webp',
 },
 {  name: 'Valores', 
     description: 'Nuestros valores son la creatividad, la innovación y la excelencia.',
-image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/a_90/v1729070693/%E4%BE%A7%E5%86%B2%E5%AD%94%E9%9D%A2%E5%8C%85%E8%BE%B9%E5%87%BA%E5%85%89%E5%AD%97_m02twx.jpg',
+image: 'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729241560/innovacion-dise%C3%B1o-tiendas-botong-sign_adnont.webp',
 }
 ]
 
@@ -102,4 +108,13 @@ description: "Potenciamos la notoriedad de tu negocio a través de una sólidad 
     name: "Resultados",
     description: "Garantizamos logros tangibles en la mejora de las ventas y la experiencia del cliente.",
     }
+]
+
+export const honors:Honor[] = [
+    {      name: "ISO",
+        image: "https://res.cloudinary.com/dxuseyfxa/image/upload/v1729243028/iso_botong_sign_jbq8vm.webp",
+        },
+        {      name: "CEE",
+            image: "https://res.cloudinary.com/dxuseyfxa/image/upload/v1729243028/ce_botong_sign_elgf4q.webp",
+            },
 ]

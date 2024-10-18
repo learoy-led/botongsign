@@ -1,0 +1,13 @@
+:host { 
+    display: flex;
+    gap: 52px;
+}
+
+.honor-image { 
+    height: 400px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.honor-image:hover {
+    transform: scale(1.75);
+  }

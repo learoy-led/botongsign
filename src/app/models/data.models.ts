@@ -10,12 +10,15 @@ export interface Solution {
     name: string,
     description: string,
     services: string[],
-    image: string
+    image: string,
+    icon: string
 }
 
 export interface Sector { 
-    name: string
-    images: string[]
+    name: string,
+    image: string,
+    description: string,
+    icon: string
 }
 
 export interface IconElement { 
@@ -40,5 +43,9 @@ export interface IdentitySigns {
     image: string
 }
 
+export interface Honor { 
+    name: string,
+    image: string
+}
 
 

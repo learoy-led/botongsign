@@ -36,6 +36,10 @@ main {
   align-items: center;
       }
 
+.page-intro {
+  background-color: var(--color-orange);
+}
+
 section {
   padding: 52px 0
 }

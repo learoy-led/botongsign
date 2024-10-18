@@ -9,7 +9,8 @@ export interface ContactDetails {
 export interface Solution { 
     name: string,
     description: string,
-    services: string[],
+    text: string[],
+    // services: string[],
     image: string,
     icon: string
 }
@@ -17,14 +18,14 @@ export interface Solution {
 export interface Sector { 
     name: string,
     image: string,
-    description: string,
+    text: string[],
     icon: string
 }
 
-export interface IconElement { 
+export interface HowElement { 
     icon: string,
     name: string, 
-    description: string
+    description?: string
 }
 
 export interface NumberData { 

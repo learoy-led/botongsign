@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { IconElement } from '../../models/data.models';
+import { HowElement, Sector, Solution } from '../../models/data.models';
 
 @Component({
   selector: 'app-icons',
@@ -10,6 +10,6 @@ import { IconElement } from '../../models/data.models';
   styleUrl: './icons.component.css'
 })
 export class IconsComponent {
-   @Input() iconElements: IconElement[] = []
+   @Input() iconElements: HowElement[] | Solution[] | Sector[]= []
    @Input() isHidden: boolean = true
 }

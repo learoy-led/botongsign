@@ -2,6 +2,7 @@
     <img class="paragraph-image" [src]="element.image" [alt]="element.name">
     <div class="paragraph-text">
     <h2 class="paragraph-title">{{element.name}}</h2>
-    <p>{{element.description}} </p>
+    <p *ngFor="let line of element.text">{{line}} </p>
 </div>
 </div>
+

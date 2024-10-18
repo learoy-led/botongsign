@@ -1,0 +1,26 @@
+<form (submit)="onSumbit()">
+
+<div>
+    <input  class="form-field" placeholder="Nombre" type="text" id="name" name="name" [(ngModel)]="name" />
+    <p></p>
+</div>
+
+<div class="contact-fields">
+<div>
+    <input  class="form-field" placeholder="Correo electrónico:" type="text" id="email" name="email" [(ngModel)]="email" />
+<p></p>
+</div>
+<div>
+    <input  class="form-field" placeholder="Teléfono:" type="text" id="phone" name="phone" [(ngModel)]="phone" />
+<p></p>
+</div>
+</div>
+
+<div> 
+    <textarea  class="form-field" placeholder="Escribe aquí tu consulta" id="question" name="question" [(ngModel)]="question"></textarea>
+    <p></p>
+</div>
+    
+    <button class="coloured-button" type="submit">Enviar</button>
+
+</form>

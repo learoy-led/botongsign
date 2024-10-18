@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { BannerComponent } from '../../shared/banner/banner.component';
 import { CommonModule } from '@angular/common';
 import { howElements, identitySigns } from '../../data/data';
-import { IconElement, IdentitySigns } from '../../models/data.models';
+import { HowElement, IdentitySigns } from '../../models/data.models';
 import { CardComponent } from '../../shared/cards/card.component';
 import { IconsComponent } from '../../shared/icons/icons.component';
 import { NumbersComponent } from '../../shared/numbers/numbers.component';
@@ -17,5 +17,5 @@ import { HonorsComponent } from './components/honors/honors.component';
 })
 export class NosotrosComponent {
   identitySigns: IdentitySigns[] = identitySigns
-  howElements: IconElement[] = howElements
+  howElements: HowElement[] = howElements
 }

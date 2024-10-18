@@ -99,6 +99,10 @@ p {text-align:center}
                     text-align: center;
                     margin: auto;
                     }
+
+                    .icons-section { 
+                      padding: 52px;
+                     }
     
                     @media screen and (max-width: 374px) {
                       * { 

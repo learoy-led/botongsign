@@ -27,7 +27,7 @@ export class ContactFormComponent {
           message: this.message,
         };
     
-        this.http.post('http://botongsign-api.vercel.app/send-email', formData)
+        this.http.post('https://botongsign-api.vercel.app/send-email', formData)
           .subscribe(response => {
             console.log('Email enviado con éxito, mensaje de app', response);
           }, error => {

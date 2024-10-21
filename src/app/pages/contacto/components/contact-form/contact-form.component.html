@@ -1,4 +1,4 @@
-<form (submit)="onSumbit()">
+<form (submit)="onSubmit()">
 
 <div>
     <input  class="form-field" placeholder="Nombre" type="text" id="name" name="name" [(ngModel)]="name" />
@@ -17,7 +17,7 @@
 </div>
 
 <div> 
-    <textarea  class="form-field" placeholder="Escribe aquí tu consulta" id="question" name="question" [(ngModel)]="question"></textarea>
+    <textarea  class="form-field" placeholder="Escribe aquí tu consulta" id="question" name="message" [(ngModel)]="message"></textarea>
     <p></p>
 </div>
     

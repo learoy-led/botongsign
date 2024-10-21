@@ -1,5 +1,6 @@
 :host { 
     display: flex;
+    flex-wrap: wrap;
     gap: 48px;
     padding: 32px 0;
     margin: 0 auto;
@@ -25,4 +26,22 @@
          text-align: center
      }
       
- 
+     @media screen and (max-width: 374px) { 
+     :host { 
+        gap: 18px;
+        padding: 22px 6px;
+        margin: 0 auto;
+        justify-items: center;
+        justify-content:center
+             }
+             .fa-solid { 
+                font-size: 28px;
+                    }
+             .icon-title { 
+                font-size: 18px;
+                    }
+                    .icon-figure { 
+                max-width: 30%;
+                gap:12px
+                    }
+                 }

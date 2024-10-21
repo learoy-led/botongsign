@@ -5,7 +5,7 @@
 }
 
 .history-section, .why-section { 
-  width: 80%;
+  min-width: 80%;
 }
 
 .history-section > h2 { 
@@ -69,11 +69,31 @@
 .progress-moments { 
    display: flex;
    padding: 12px 52px;
-   gap: 100px;
+   gap: 90px;
    align-items: center;
-   justify-content: center
+   justify-content: center;
+   min-width: 80%;
   }
 
   .moment { 
-    width: 20%
+    width: 20%;
    }
+
+   @media screen and (max-width: 374px) { 
+   .history-section { 
+   display: block;
+  }
+
+  .progress-moments { 
+    justify-content: flex-start;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap:16px;
+  max-width: 100vw
+}
+
+.moment { 
+  min-width: 75%;
+ }
+
+}

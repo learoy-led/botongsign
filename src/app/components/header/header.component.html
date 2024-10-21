@@ -1,6 +1,6 @@
 
     <header>
     <a [routerLink]="['/']"><img class="header-logo" src="/botong-sign-logo-horizontal.webp" alt="botong-sign-logo-diseño-comercial"/></a>
-    <app-navbar></app-navbar>
-
+    <app-navbar [burguerIsOpen]="burguerIsOpen"></app-navbar>
+    <span class="burguer" (click)="openBurguer()">☰</span>
 </header>

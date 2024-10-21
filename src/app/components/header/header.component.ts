@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 
@@ -10,5 +10,10 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  burguerIsOpen:boolean = false
 
+  public openBurguer() {
+       this.burguerIsOpen = !this.burguerIsOpen
+  }
 }
+

@@ -50,3 +50,21 @@
       .paragraph-text {
         width: 50%;
           }
+
+
+          @media screen and (max-width: 374px) { 
+          .paragraph-figure {
+            display: block; 
+          }
+          .paragraph-image, .paragraph-text {
+            width: 100%;
+          }  
+          .paragraph-title, .paragraph-text > p {
+            margin: 0 !important;
+            padding: 12px 0
+               }   
+
+               .paragraph-text {
+                padding-bottom: 36px;
+              }
+          }

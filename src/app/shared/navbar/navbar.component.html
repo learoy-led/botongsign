@@ -1,5 +1,5 @@
 <nav>
-    <ul>
+    <ul [ngClass]="{ 'nav-links': true, 'active': burguerIsOpen }">
     <li><a [routerLink]="['/soluciones']">Soluciones</a></li>
         <li><a [routerLink]="['/sectores']">Sectores</a></li>
         <li><a [routerLink]="['/nosotros']">Nosotros</a></li>

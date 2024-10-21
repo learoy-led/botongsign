@@ -1,4 +1,13 @@
-<figure class="honor-figure" *ngFor="let honor of honors">
-    <img class="honor-image" [src]="honor.image" [alt]="'botong-sign-certificado-calidad-o-patente'">
-<p>{{honor.name}} </p>
-</figure>
+    <ul class="carousel-elements" >
+   <li class="carousel-element" *ngFor="let honor of honors" >
+    
+    <figure class="honor-figure">
+        <img class="honor-image" [src]="honor.image" [alt]="'botong-sign-certificado-calidad-o-patente'">
+    <p>{{honor.name}} </p>
+    </figure>
+
+   </li>
+    </ul >
+    <ul class="carousel-dots" >
+        <li class="carousel-dot" *ngFor="let honor of honors" ></li>
+    </ul>

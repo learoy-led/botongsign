@@ -1,4 +1,4 @@
-ul {
+.nav-links {
   display: flex;
   gap: 60px;
 }
@@ -19,7 +19,21 @@ li:hover {
 
 
 @media screen and (max-width: 374px) {
-  nav { 
-                display: none;
-      }
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    background-color: var(--color-white);
+  }
+
     } 

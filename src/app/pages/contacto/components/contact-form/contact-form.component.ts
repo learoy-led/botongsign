@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from '../../../../shared/button/button.component';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { SendEmailService } from '../../../../services/send-email.service';
+import { FormData } from '../../../../models/data.models';
 
 @Component({
   selector: 'app-contact-form',
@@ -11,35 +12,18 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   styleUrl: './contact-form.component.css'
 })
 export class ContactFormComponent {
- name: string = ''
-  email: string = ''
-    phone: string = ''
-      message: string = ''
 
-      constructor(private http: HttpClient) {}
-    
+constructor(private SendEmailService: SendEmailService) {}
+
+public formData: FormData = {
+  name: '',
+  email: '',
+  phone: '',
+  message:  '',
+};
+
       public onSubmit() {      
-        const formData = {
-          name: this.name,
-          email: this.email,
-          phone: this.phone,
-          message: this.message,
-        };
-
-        console.log(formData)
-
-        
-        const httpOptions = {
-          headers: new HttpHeaders({
-            'Content-Type':  'application/json',
-          })
-        };
-    
-        this.http.post('https://botongsign-api.vercel.app//send-email', formData, httpOptions)
-          .subscribe(response => {
-            console.log('Email enviado con éxito, mensaje de app', response);
-          }, error => {
-            console.error('Error al enviar el email', error);
-          });
+        console.log(this.formData)
+        this.SendEmailService.sendEmail(this.formData)
       }
       }

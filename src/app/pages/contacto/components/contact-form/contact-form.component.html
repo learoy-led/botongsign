@@ -1,23 +1,23 @@
 <form (submit)="onSubmit()">
 
 <div>
-    <input  class="form-field" placeholder="Nombre" type="text" id="name" name="name" [(ngModel)]="name" />
+    <input  class="form-field" placeholder="Nombre" type="text" id="name" name="name" [(ngModel)]="formData.name" />
     <p></p>
 </div>
 
 <div class="contact-fields">
 <div>
-    <input  class="form-field" placeholder="Correo electrónico:" type="text" id="email" name="email" [(ngModel)]="email" />
+    <input  class="form-field" placeholder="Correo electrónico:" type="text" id="email" name="email" [(ngModel)]="formData.email" />
 <p></p>
 </div>
 <div>
-    <input  class="form-field" placeholder="Teléfono:" type="text" id="phone" name="phone" [(ngModel)]="phone" />
+    <input  class="form-field" placeholder="Teléfono:" type="text" id="phone" name="phone" [(ngModel)]="formData.phone" />
 <p></p>
 </div>
 </div>
 
 <div> 
-    <textarea  class="form-field" placeholder="Escribe aquí tu consulta" id="question" name="message" [(ngModel)]="message"></textarea>
+    <textarea  class="form-field" placeholder="Escribe aquí tu consulta" id="question" name="message" [(ngModel)]="formData.message"></textarea>
     <p></p>
 </div>
     

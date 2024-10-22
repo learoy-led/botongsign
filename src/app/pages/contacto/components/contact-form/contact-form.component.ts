@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from '../../../../shared/button/button.component';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-form',
@@ -18,16 +18,24 @@ export class ContactFormComponent {
 
       constructor(private http: HttpClient) {}
     
-      public onSubmit() {
-        console.log('se envía formulario')
+      public onSubmit() {      
         const formData = {
           name: this.name,
           email: this.email,
           phone: this.phone,
           message: this.message,
         };
+
+        console.log(formData)
+
+        
+        // const httpOptions = {
+        //   headers: new HttpHeaders({
+        //     'Content-Type':  'application/json',
+        //   })
+        // };
     
-        this.http.post('https://botongsign-api.vercel.app/', formData)
+        this.http.post('https://botongsign/api/send-email', formData)
           .subscribe(response => {
             console.log('Email enviado con éxito, mensaje de app', response);
           }, error => {
@@ -35,5 +43,3 @@ export class ContactFormComponent {
           });
       }
       }
-
-

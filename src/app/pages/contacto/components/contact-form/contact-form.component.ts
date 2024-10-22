@@ -29,13 +29,13 @@ export class ContactFormComponent {
         console.log(formData)
 
         
-        // const httpOptions = {
-        //   headers: new HttpHeaders({
-        //     'Content-Type':  'application/json',
-        //   })
-        // };
+        const httpOptions = {
+          headers: new HttpHeaders({
+            'Content-Type':  'application/json',
+          })
+        };
     
-        this.http.post('https://botongsign/api/send-email', formData)
+        this.http.post('https://botongsign-api.vercel.app//send-email', formData, httpOptions)
           .subscribe(response => {
             console.log('Email enviado con éxito, mensaje de app', response);
           }, error => {

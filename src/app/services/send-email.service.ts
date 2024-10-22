@@ -6,7 +6,7 @@ import { FormData } from '../models/data.models';
   providedIn: 'root'
 })
 export class SendEmailService {
-  public API_URL: string = 'https://botongsign-api.vercel.app/send-email'
+  public API_URL: string = 'https://botongsign-api.vercel.app/api/send-email'
 
   constructor(private http: HttpClient) { }
 

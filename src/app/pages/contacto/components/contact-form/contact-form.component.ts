@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from '../../../../shared/button/button.component';
 import { SendEmailService } from '../../../../services/send-email.service';
@@ -14,7 +14,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.css'
 })
-export class ContactFormComponent {
+export class ContactFormComponent implements OnDestroy{
   public submittedMessage: string = '';
   public messageSubscription: Subscription;
   public formData: FormData = {
@@ -36,5 +36,11 @@ export class ContactFormComponent {
 
   public onSubmit() {
     this.SendEmailService.sendEmail(this.formData);
+  }
+
+  ngOnDestroy() {
+    this.messageSubscription.unsubscribe();
+    this.submittedMessage = '';
+    this.SendEmailService.completeSubmittedMessage();
   }
 }

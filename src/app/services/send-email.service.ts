@@ -33,4 +33,8 @@ export class SendEmailService {
       }
     );
   }
+
+  public completeSubmittedMessage() {
+    this.submittedMessage$.complete();
+  }
 }

@@ -1,8 +1,14 @@
 <figure class="icon-figure" *ngFor="let iconElement of iconElements; let i = index">
-  <a class="icon-link" [href]="currentRoute+'#paragraph-title-'+i" >  
+  <ng-container *ngIf="anchorElement; else noAnchor">
+  <a *ngIf="anchorElement" class="icon-link" [href]="currentRoute+'#paragraph-title-'+i">  
   <i [ngClass]="iconElement.icon"></i>
   <h2 class="icon-title">{{ iconElement.name }}</h2>
 </a>
-  <p class="icon-description" [hidden]="isHidden">{{ iconElement.description }}</p>
+</ng-container>
+<ng-template #noAnchor>
+  <i [ngClass]="iconElement.icon"></i>
+  <h2 class="icon-title">{{ iconElement.name }}</h2>
+</ng-template>
+  <p *ngIf="!anchorElement" class="icon-description">{{ iconElement.description }}</p>
 </figure>
 

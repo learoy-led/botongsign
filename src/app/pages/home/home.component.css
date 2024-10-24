@@ -20,6 +20,11 @@
   min-width: 60vw;
 }
 
+.customers-section {
+overflow: hidden;
+max-width: 100%;
+}
+
 @media screen and (max-width: 374px) {
   .activity-presentation,
   .numbers-section,

@@ -1,7 +1,5 @@
 form {
-  width: 65%;
-  padding: 52px;
-  margin: 0 auto;
+  padding: 52px 0;
   text-align: center;
 }
 
@@ -35,4 +33,12 @@ form {
   color: var(--color-purple);
   padding: 6px 22px 12px 22px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 374px) {
+
+ .contact-fields {
+  display: block;
+}
+
 }

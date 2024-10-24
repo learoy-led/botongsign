@@ -1,3 +1,5 @@
-<figure class="customer-logo-container" *ngFor="let customer of customers.concat(customers)">
-  <img class="customer-logo" [src]="customer.logo" [alt]="customer.name + 'logo'" />
-</figure>
+<ul>
+  <li class="customer-logo-container" *ngFor="let customer of customers.concat(customers)">
+    <img class="customer-logo" [src]="customer.logo" [alt]="customer.name + 'logo'" />
+  </li>
+</ul>

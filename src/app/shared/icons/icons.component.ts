@@ -12,14 +12,16 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class IconsComponent implements OnInit {
   @Input() iconElements: HowElement[] | Solution[] | Sector[] = [];
-  @Input() isHidden: boolean = true;
   @Input() iconLink: string = '';
-  currentRoute = ''
+
+  public currentRoute = ''
+  public anchorElement = false
 
 constructor(private router: Router) {}
 
   ngOnInit() {
 this.currentRoute = this.router.url
+if (this.currentRoute === '/soluciones' || this.currentRoute === '/sectores') {this.anchorElement = true}
   }
 }
 

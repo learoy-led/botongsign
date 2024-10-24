@@ -12,5 +12,5 @@ import { solutions } from '../../data/data';
   styleUrl: './soluciones.component.css'
 })
 export class SolucionesComponent {
-  solutions: Solution[] = solutions
+  public solutions: Solution[] = solutions;
 }

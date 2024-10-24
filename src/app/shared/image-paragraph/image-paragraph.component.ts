@@ -10,5 +10,5 @@ import { Sector, Solution } from '../../models/data.models';
   styleUrl: './image-paragraph.component.css'
 })
 export class ImageParagraphComponent {
-  @Input() paragraphElements: Solution[] | Sector[] = []
+  @Input() paragraphElements: Solution[] | Sector[] = [];
 }

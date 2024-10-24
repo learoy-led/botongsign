@@ -10,5 +10,5 @@ import { IdentitySigns, Solution } from '../../models/data.models';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-@Input() cardElements:Solution[] | IdentitySigns[] = []
+  @Input() cardElements: Solution[] | IdentitySigns[] = [];
 }

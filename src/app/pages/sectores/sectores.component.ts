@@ -12,5 +12,5 @@ import { sectors } from '../../data/data';
   styleUrl: './sectores.component.css'
 })
 export class SectoresComponent {
-  sectors: Sector[] = sectors
+  public sectors: Sector[] = sectors;
 }

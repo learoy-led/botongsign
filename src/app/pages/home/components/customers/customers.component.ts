@@ -11,6 +11,5 @@ import { customers } from '../../../../data/data';
   styleUrl: './customers.component.css'
 })
 export class CustomersComponent {
-  customers: Customer[] = customers
-
+  public customers: Customer[] = customers;
 }

@@ -9,8 +9,8 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './banner.component.css'
 })
 export class BannerComponent {
-@Input() bannerTitle: string = ""
-@Input() bannerImage: string = ""
-@Input() bannerAlt: string = ""
-@Input() isHidden: boolean = true
+  @Input() bannerTitle: string = '';
+  @Input() bannerImage: string = '';
+  @Input() bannerAlt: string = '';
+  @Input() isHidden: boolean = true;
 }

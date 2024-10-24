@@ -10,10 +10,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  burguerIsOpen:boolean = false
+  public burguerIsOpen: boolean = false;
 
   public openBurguer() {
-       this.burguerIsOpen = !this.burguerIsOpen
+    this.burguerIsOpen = !this.burguerIsOpen;
   }
 }
-

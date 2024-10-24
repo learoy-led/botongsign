@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { contactDetails, solutions, sectors } from '../../data/data'
+import { contactDetails, solutions, sectors } from '../../data/data';
 import { ContactDetails, Solution, Sector } from '../../models/data.models';
 import { CommonModule } from '@angular/common';
 
@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-public contact: ContactDetails = contactDetails
-public solutions: Solution[] = solutions 
-public sectors: Sector[] = sectors 
+  public contact: ContactDetails = contactDetails;
+  public solutions: Solution[] = solutions;
+  public sectors: Sector[] = sectors;
 }

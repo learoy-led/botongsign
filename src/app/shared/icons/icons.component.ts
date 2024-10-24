@@ -10,6 +10,6 @@ import { HowElement, Sector, Solution } from '../../models/data.models';
   styleUrl: './icons.component.css'
 })
 export class IconsComponent {
-   @Input() iconElements: HowElement[] | Solution[] | Sector[]= []
-   @Input() isHidden: boolean = true
+  @Input() iconElements: HowElement[] | Solution[] | Sector[] = [];
+  @Input() isHidden: boolean = true;
 }

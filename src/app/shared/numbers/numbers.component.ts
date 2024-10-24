@@ -11,5 +11,5 @@ import { numbers } from '../../data/data';
   styleUrl: './numbers.component.css'
 })
 export class NumbersComponent {
-  numbers: NumberData[] = numbers
+  public numbers: NumberData[] = numbers;
 }

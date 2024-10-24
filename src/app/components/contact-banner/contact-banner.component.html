@@ -1,3 +1,11 @@
 <h2 class="banner-title">Infórmate sin compromiso</h2>
-<p class="banner-text">Ya seas distribuidor, montador o quieras llevar a cabo un proyecto de diseño y/o construcción de tindas, hablemos.</p>
-<app-button [buttonStyle]="'coloured-button'" [buttonText] = "'Contacto'" [buttonLink]="'/contacto'"></app-button>
+<p class="banner-text">
+  Ya seas distribuidor, montador o quieras llevar a cabo un proyecto de diseño y/o construcción de
+  tindas, hablemos.
+</p>
+<app-button
+  [buttonStyle]="'coloured-button'"
+  [buttonText]="'Contacto'"
+  [buttonLink]="'/contacto'"
+  [hidden]="isHidden"
+></app-button>

@@ -1,6 +1,10 @@
-    <div class="banner-text-and-button">
-    <h2 class="banner-text">{{bannerTitle}}</h2>
-    <app-button [hidden]="isHidden" [buttonStyle]="'white-button'" [buttonText] = "'Quiénes somos'" [buttonLink]="'/nosotros'"></app-button>
-    </div>
-    <img class="banner-img" [src]="bannerImage" [alt]="bannerAlt">
-       
+<div class="banner-text-and-button">
+  <h2 class="banner-text">{{ bannerTitle }}</h2>
+  <app-button
+    [hidden]="isHidden"
+    [buttonStyle]="'white-button'"
+    [buttonText]="'Quiénes somos'"
+    [buttonLink]="'/nosotros'"
+  ></app-button>
+</div>
+<img class="banner-img" [src]="bannerImage" [alt]="bannerAlt" />

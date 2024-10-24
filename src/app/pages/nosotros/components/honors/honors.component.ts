@@ -11,5 +11,5 @@ import { Honor } from '../../../../models/data.models';
   styleUrl: './honors.component.css'
 })
 export class HonorsComponent {
-honors: Honor[] = honors
+public honors: Honor[] = honors
 }

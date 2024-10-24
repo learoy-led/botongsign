@@ -4,7 +4,7 @@
 }
 
 a {
-  color: var(--color-purple);   
+  color: var(--color-purple);
   font-size: 21px;
   text-transform: uppercase;
 }
@@ -16,7 +16,6 @@ a:hover {
 li:hover {
   transform: scale(1.05);
 }
-
 
 @media screen and (max-width: 374px) {
   .nav-links {
@@ -35,5 +34,4 @@ li:hover {
     z-index: 2;
     background-color: var(--color-white);
   }
-
-    } 
+}

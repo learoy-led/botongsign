@@ -1,29 +1,28 @@
-:host { 
-    width: 100%;
-    height: 50vh;
-    padding: 52px;
-    background-color: var(--color-purple);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--color-white)
-}    
-  
-  .banner-title {
-      font-size:38px;
-      font-weight: 500;  
-    }
+:host {
+  width: 100%;
+  height: 50vh;
+  padding: 52px;
+  background-color: var(--color-purple);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-white);
+}
 
-    .banner-text {
-          font-size:22px;
-          font-weight: 400;
-          padding: 22px  0 48px  0px       
-        }
+.banner-title {
+  font-size: 38px;
+  font-weight: 500;
+}
 
-        @media screen and (max-width: 374px) {
-          .banner-text { 
-                        display: none;
-              }
-            } 
-     
+.banner-text {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 22px 0 48px 0px;
+}
+
+@media screen and (max-width: 374px) {
+  .banner-text {
+    display: none;
+  }
+}

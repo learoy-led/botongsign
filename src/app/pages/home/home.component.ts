@@ -7,15 +7,23 @@ import { ButtonComponent } from '../../shared/button/button.component';
 import { CustomersComponent } from './components/customers/customers.component';
 import { BannerComponent } from '../../shared/banner/banner.component';
 import { CardComponent } from '../../shared/cards/card.component';
-import { NumbersComponent } from "../../shared/numbers/numbers.component";
+import { NumbersComponent } from '../../shared/numbers/numbers.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HomeCarouselComponent, CommonModule, ButtonComponent, CustomersComponent, BannerComponent, CardComponent, NumbersComponent],
+  imports: [
+    HomeCarouselComponent,
+    CommonModule,
+    ButtonComponent,
+    CustomersComponent,
+    BannerComponent,
+    CardComponent,
+    NumbersComponent
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  solutions: Solution[] = solutions
+ public solutions: Solution[] = solutions;
 }

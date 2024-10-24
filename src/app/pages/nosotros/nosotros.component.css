@@ -1,99 +1,101 @@
-.history-section { 
+.history-section {
   width: 80%;
- display: flex;
- gap: 52px;
+  display: flex;
+  gap: 52px;
 }
 
-.history-section, .why-section { 
+.history-section,
+.why-section {
   min-width: 80%;
 }
 
-.history-section > h2 { 
-  text-align: left
+.history-section > h2 {
+  text-align: left;
 }
 
-.history-all-paragraphs { 
+.history-all-paragraphs {
   display: flex;
   flex-direction: column;
   gap: 42px;
- }
-
- .history-small-paragraphs { 
-  display: flex;
-  gap: 42px;
- }
-
- .main-history-paragraph { 
-  font-weight: 500;
-  text-align: left
- }
-
- .secondary-history-paragraph { 
-  text-align: left
- }
-
- .numbers-section { 
-  min-width: 60vw;
-  position: relative;
-    }
-
-    .numbers-section::after {
-      content: '';
-      display: block;
-      width: 40%;
-      height: 1px;
-      background-color: var(--color-purple);
-      position: absolute;
-      bottom: 0;
-      left: 30%;
-    }
-
-    .number-qty { 
-      font-size:38px;
-      font-weight: 500;
-      color: var(--color-orange)
-    }
-
-.progress-section { 
-        background-color: var(--color-orange);
-          }
-
-          .progress-section > .page-subtitle, .progress-section > .remarked-text { 
-            color: var(--color-white);
-              }
-
-              .moment > .number-qty,  .progress-moments > .fa-solid { 
-                color: var(--color-red);
-                  }
-  
-.progress-moments { 
-   display: flex;
-   padding: 12px 52px;
-   gap: 90px;
-   align-items: center;
-   justify-content: center;
-   min-width: 80%;
-  }
-
-  .moment { 
-    width: 20%;
-   }
-
-   @media screen and (max-width: 374px) { 
-   .history-section { 
-   display: block;
-  }
-
-  .progress-moments { 
-    justify-content: flex-start;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap:16px;
-  max-width: 100vw
 }
 
-.moment { 
-  min-width: 75%;
- }
+.history-small-paragraphs {
+  display: flex;
+  gap: 42px;
+}
 
+.main-history-paragraph {
+  font-weight: 500;
+  text-align: left;
+}
+
+.secondary-history-paragraph {
+  text-align: left;
+}
+
+.numbers-section {
+  min-width: 60vw;
+  position: relative;
+}
+
+.numbers-section::after {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 1px;
+  background-color: var(--color-purple);
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+}
+
+.number-qty {
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--color-orange);
+}
+
+.progress-section {
+  background-color: var(--color-orange);
+}
+
+.progress-section > .page-subtitle,
+.progress-section > .remarked-text {
+  color: var(--color-white);
+}
+
+.moment > .number-qty,
+.progress-moments > .fa-solid {
+  color: var(--color-red);
+}
+
+.progress-moments {
+  display: flex;
+  padding: 12px 52px;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+  min-width: 80%;
+}
+
+.moment {
+  width: 20%;
+}
+
+@media screen and (max-width: 374px) {
+  .history-section {
+    display: block;
+  }
+
+  .progress-moments {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    max-width: 100vw;
+  }
+
+  .moment {
+    min-width: 75%;
+  }
 }

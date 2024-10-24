@@ -1,8 +1,7 @@
 <div class="paragraph-figure" *ngFor="let element of paragraphElements">
-    <img class="paragraph-image" [src]="element.image" [alt]="element.name">
-    <div class="paragraph-text">
-    <h2 class="paragraph-title">{{element.name}}</h2>
-    <p *ngFor="let line of element.text">{{line}} </p>
+  <img class="paragraph-image" [src]="element.image" [alt]="element.name" />
+  <div class="paragraph-text">
+    <h2 class="paragraph-title">{{ element.name }}</h2>
+    <p *ngFor="let line of element.text">{{ line }}</p>
+  </div>
 </div>
-</div>
-

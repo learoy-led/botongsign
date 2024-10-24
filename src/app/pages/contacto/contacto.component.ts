@@ -8,6 +8,4 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css'
 })
-export class ContactoComponent {
-
-}
+export class ContactoComponent {}

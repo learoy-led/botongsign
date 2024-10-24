@@ -1,24 +1,30 @@
 <footer>
-    <div class="contact-details">
-<h2  class="footer-nav-title">Contacto</h2>
-<p class="footer-nav-element">Dirección:<br/> {{contact.address1}}<br/>{{contact.address2}}</p>
-<p class="footer-nav-element">Teléfonos:<br/>{{contact.phone1}}<br/>{{contact.phone2}}</p>
-<p class="footer-nav-element">Email:<br/>{{contact.email}}</p>   
-</div>
+  <div class="contact-details">
+    <h2 class="footer-nav-title">Contacto</h2>
+    <p class="footer-nav-element">
+      Dirección:<br />
+      {{ contact.address1 }}<br />{{ contact.address2 }}
+    </p>
+    <p class="footer-nav-element">Teléfonos:<br />{{ contact.phone1 }}<br />{{ contact.phone2 }}</p>
+    <p class="footer-nav-element">Email:<br />{{ contact.email }}</p>
+  </div>
 
-<nav>
+  <nav>
     <div>
-    <h2 class="footer-nav-title">Soluciones</h2>
-    <ul *ngFor="let solution of solutions">
-    <li class="footer-nav-element"><a [routerLink]="['/soluciones']">{{solution.name }}</a></li>
-        </ul>
+      <h2 class="footer-nav-title">Soluciones</h2>
+      <ul *ngFor="let solution of solutions">
+        <li class="footer-nav-element">
+          <a [routerLink]="['/soluciones']">{{ solution.name }}</a>
+        </li>
+      </ul>
     </div>
-        <div>
-        <h2 class="nav-title">Sectores</h2>
-        <ul *ngFor="let sector of sectors">
-        <li class="footer-nav-element"><a [routerLink]="['/sectores']">{{sector.name}}</a></li>
-            </ul>
-        </div>
-        </nav>
-        
-    </footer>
+    <div>
+      <h2 class="footer-nav-title">Sectores</h2>
+      <ul *ngFor="let sector of sectors">
+        <li class="footer-nav-element">
+          <a [routerLink]="['/sectores']">{{ sector.name }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</footer>

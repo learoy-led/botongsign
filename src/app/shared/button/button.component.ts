@@ -10,7 +10,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './button.component.css'
 })
 export class ButtonComponent {
- @Input() buttonText: string = ''
- @Input() buttonLink: string = ''
-  @Input() buttonStyle: string = ''
+  @Input() buttonText: string = '';
+  @Input() buttonLink: string = '';
+  @Input() buttonStyle: string = '';
 }

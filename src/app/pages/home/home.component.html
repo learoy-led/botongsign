@@ -1,38 +1,43 @@
 <main>
-<app-home-carousel></app-home-carousel>
-<section class="activity-presentation">
+  <app-home-carousel></app-home-carousel>
+  <section class="activity-presentation">
     <div>
-<h2 class="page-subtitle">Materiales para tiendas</h2>
-<p class="home-text">    Proveemos todo tipo de materiales para la construcción de tiendas, boutiques, showroom y cualquier tipo de establecimiento.
-        Si eres distribuidor de rotulación, expositores, cerrajería, iluminación u otros suministros para tiendas, descubre nuestras soluciones.
-</p>
-</div>
-<div>
-    <h2 class="page-subtitle">Diseño integral de tiendas</h2>
-<p class="home-text">    Desde el diseño de tu identidad visual corporativa hasta su puesta en escena en el punto de venta, 
-    desarrollamos e implantamos soluciones 360º para joyerías, restaurantes, concesionarios, etc.    
-</p>
-</div>
-</section>
+      <h2 class="page-subtitle">Materiales para tiendas</h2>
+      <p class="home-text">
+        Proveemos todo tipo de materiales para la construcción de tiendas, boutiques, showroom y
+        cualquier tipo de establecimiento. Si eres distribuidor de rotulación, expositores,
+        cerrajería, iluminación u otros suministros para tiendas, descubre nuestras soluciones.
+      </p>
+    </div>
+    <div>
+      <h2 class="page-subtitle">Diseño integral de tiendas</h2>
+      <p class="home-text">
+        Desde el diseño de tu identidad visual corporativa hasta su puesta en escena en el punto de
+        venta, desarrollamos e implantamos soluciones 360º para joyerías, restaurantes,
+        concesionarios, etc.
+      </p>
+    </div>
+  </section>
 
-<section class="numbers-section">
+  <section class="numbers-section">
     <app-numbers></app-numbers>
-</section>
+  </section>
 
-<app-banner 
-[bannerTitle] = "'Con la tecnología más avanzada y el equipo mejor calificado'"
-[bannerImage]= "'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729174363/dise%C3%B1o-comercial-botong-sign_xwe10a.webp'"
-[bannerAlt]= "'fabrica-materiales-construccion-de-tiendas'" 
-[isHidden]="false"
-></app-banner>
+  <app-banner
+    [bannerTitle]="'Con la tecnología más avanzada y el equipo mejor calificado'"
+    [bannerImage]="
+      'https://res.cloudinary.com/dxuseyfxa/image/upload/v1729174363/dise%C3%B1o-comercial-botong-sign_xwe10a.webp'
+    "
+    [bannerAlt]="'fabrica-materiales-construccion-de-tiendas'"
+    [isHidden]="false"
+  ></app-banner>
 
-<section class="solutions-section">
+  <section class="solutions-section">
     <h2 class="page-subtitle">soluciones para diseño y construcción de tiendas</h2>
-<app-card [cardElements]="solutions"></app-card>
-</section>
+    <app-card [cardElements]="solutions"></app-card>
+  </section>
 
-<section class="customers-section">
-<app-customers></app-customers>
-</section>
-
+  <section class="customers-section">
+    <app-customers></app-customers>
+  </section>
 </main>

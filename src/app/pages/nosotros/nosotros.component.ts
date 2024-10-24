@@ -11,11 +11,18 @@ import { HonorsComponent } from './components/honors/honors.component';
 @Component({
   selector: 'app-nosotros',
   standalone: true,
-  imports: [BannerComponent, CommonModule, CardComponent, IconsComponent, NumbersComponent, HonorsComponent],
+  imports: [
+    BannerComponent,
+    CommonModule,
+    CardComponent,
+    IconsComponent,
+    NumbersComponent,
+    HonorsComponent
+  ],
   templateUrl: './nosotros.component.html',
   styleUrl: './nosotros.component.css'
 })
 export class NosotrosComponent {
-  identitySigns: IdentitySigns[] = identitySigns
-  howElements: HowElement[] = howElements
+  public identitySigns: IdentitySigns[] = identitySigns;
+  public howElements: HowElement[] = howElements;
 }
